@@ -1,0 +1,7 @@
+{
+  "name": "echo",
+  "description": "A subagent that maintains your project's coding rules in .claude/rules/.",
+  "author": {
+    "name": "rufasterisco"
+  }
+}

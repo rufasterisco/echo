@@ -29,27 +29,32 @@ Next time Claude works on an integration test, that rule loads automatically.
 
 ## What it is
 
-Three files:
+One file:
 
 ```
 .claude/
-├── agents/
-│   └── echo.md        # the subagent
-├── skills/
-│   └── review/
-│       └── SKILL.md          # /review command
-└── hooks/                    # (optional, see below)
+└── agents/
+    └── echo.md        # the subagent
 ```
 
 **echo.md** — A subagent with `memory: project`. It knows where rules live, how to write them with proper glob scoping, and how to check for existing rules before creating duplicates. Its memory accumulates context about your project's conventions over time.
-
-**review/SKILL.md** — A `/review` skill that reads the current diff, loads all existing rules, and flags anything that looks off. When you confirm a violation, it talks to echo to create or strengthen the rule.
 
 That's it. Everything else is standard Claude Code primitives doing what they already do.
 
 ## Install
 
-<TBD>
+Echo is distributed as a Claude Code plugin via its own marketplace.
+
+```
+/plugin marketplace add rufasterisco/echo
+/plugin install echo@echo
+```
+
+To update later:
+
+```
+/plugin marketplace update echo
+```
 
 ## Usage
 
