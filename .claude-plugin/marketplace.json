@@ -7,7 +7,7 @@
     {
       "name": "echo",
       "source": "./plugins/echo",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "description": "A subagent that maintains your project's coding rules in .claude/rules/."
     }
   ]
