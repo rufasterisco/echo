@@ -1,0 +1,2 @@
+.nusa/sessions/** filter=lfs diff=lfs merge=lfs -text
+.nusa/html/** filter=lfs diff=lfs merge=lfs -text

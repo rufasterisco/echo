@@ -1,0 +1,2 @@
+[lfs]
+	fetchexclude = .nusa/sessions/**,.nusa/html/**
